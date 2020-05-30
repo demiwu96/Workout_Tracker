@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/exercisedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://demiwu:demi0912@ds129045.mlab.com:29045/heroku_w66t8g67", { useNewUrlParser: true });
 
 
 var routes = require("./routes/html-routes.js");
